@@ -1,5 +1,5 @@
 const request = require("request");
-const rsc = require("../dev_rsc/rsc.js");
+// const rsc = require("../dev_rsc/rsc.js");
 
 const forecast = (city, callback) => {
   url =
