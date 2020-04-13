@@ -27,7 +27,7 @@ weatherForm.addEventListener("submit", (e) => {
   txtMessage1.textContent = "Loading...";
   txtMessage2.textContent = "";
 
-  fetch("/weather/?address=" + location).then((response) => {
+  fetch("/weather/search/?address=" + location).then((response) => {
     response.json().then((data) => {
       clearView();
       if (data.error) {
